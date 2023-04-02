@@ -3,7 +3,7 @@ import { Card, Container, Row, Col,DropdownButton,Dropdown } from "react-bootstr
 import { Icon, Image, Button } from 'semantic-ui-react';
 import { json, Link, useParams } from "react-router-dom";
 import FilterType from "./FilterType";
-import Contributions from "./Contributions";
+
 
 function Events() {
  
@@ -151,7 +151,6 @@ let donData = Object.values(events);
 
 
       <div>
-        <Contributions/>
       </div>
     </Container>
 

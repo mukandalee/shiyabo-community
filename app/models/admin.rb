@@ -1,14 +1,21 @@
 class Admin < ApplicationRecord
     has_many  :events
     has_many  :contributions
-    has_s
+    has_secure_password
+    validates :adminName, presence: true
+    validates :adminName, uniqueness: true
+    validates :adminName, length: { minimum: 4 }
     # generate a salted + hashed password and save it to password_digest
     def password=(new_password)
+      
+
+
       salt = BCrypt::Engine::generate_salt
       # => $2a$12$UW5etUc/o1YL4sSdeTBPku
       self.password_digest = BCrypt::Engine::hash_secret(new_password, salt)
       # => $2a$12$UW5etUc/o1YL4sSdeTBPkueUWwNIPNdQNAwzuSGkS3L5coBKMMZHm"
     end
+
   
     # check the plaintext password against the salted + hashed password
     def authenticate(password)
@@ -17,6 +24,6 @@ class Admin < ApplicationRecord
       # compare the saved password_digest against the plaintext password by running the plaintext password through the same hashing function
       return nil unless BCrypt::Engine::hash_secret(password, salt) == self.password_digest
       self
-    endecure_password
+    end
 
 end

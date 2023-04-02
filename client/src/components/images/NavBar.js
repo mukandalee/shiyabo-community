@@ -11,18 +11,24 @@ export default function NavBar() {
         <div     id= "my-header" >
         <Menu inverted pointing secondary>
         <Menu.Item
-            name='logo'
+            name='Login'
             active={activeItem === 'logo'}
             onClick={handleItemClick}
             href="/"
           >
-            <img src="https://media.istockphoto.com/id/1395347219/photo/modern-american-real-estate.jpg?b=1&s=170667a&w=0&k=20&c=KJADa6hwzLmJVozTmfxYFmMqQOQgLvHOwBVJloPeGt0="  alt="" />
+            {/* <img src="https://media.istockphoto.com/id/1395347219/photo/modern-american-real-estate.jpg?b=1&s=170667a&w=0&k=20&c=KJADa6hwzLmJVozTmfxYFmMqQOQgLvHOwBVJloPeGt0="  alt="" /> */}
           </Menu.Item>
           <Menu.Item
-            name='SignUp'
+            name='Register'
             active={activeItem === 'SignUp'}
             onClick={handleItemClick}
             href="/SignUp"
+          />
+            <Menu.Item
+            name='ForgotenPassword'
+            active={activeItem === 'ForgotenPassword'}
+            onClick={handleItemClick}
+             href="/ForgotenPassword"
           />
         </Menu>
         </div>
