@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :users 
   resources :events
+  resources :members
   resources :contributions
   resources :admins
   post '/login',    to: 'sessions#create'

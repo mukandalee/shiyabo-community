@@ -202,3 +202,25 @@ footer a:hover, footer a:focus {
       font-size: 2.2rem;
   }
 }
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 115vh;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-size: "fit";
+  height: "350px";
+}
+.group {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+

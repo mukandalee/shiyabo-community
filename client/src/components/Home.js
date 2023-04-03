@@ -42,6 +42,7 @@ function Home() {
 
             <div class="col-twelve">
                 <div class="copyright" >
+                    
                     <span >© Copyright Shiyabo Community</span> 
                
                 <div class="go-top">

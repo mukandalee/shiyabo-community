@@ -3,6 +3,7 @@ import { Card, Container, Row, Col,DropdownButton,Dropdown } from "react-bootstr
 import { Icon, Image, Button } from 'semantic-ui-react';
 import { json, Link, useParams } from "react-router-dom";
 import FilterType from "./FilterType";
+import AddEvent from "./AddEvent";
 
 
 function Events() {
@@ -151,6 +152,10 @@ let donData = Object.values(events);
 
 
       <div>
+      </div>
+      <div>
+        
+        
       </div>
     </Container>
 

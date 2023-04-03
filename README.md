@@ -11,13 +11,15 @@ The lane that shiyabo community has embarked on really inspires me, they have fo
 # Objectives
 
     - To enable the user sign up and sign in (authentication)
-    - To  enable a registered user c post an event the he/she needs be helped
-    - To enable  the registered user contribute /support the nneedy cases
+    - To  enable a registered user  post an event  he/she needs help for
+    - To enable  the registered user contribute /support the needy cases
     -To enable team work and interaction between community member
 
 ## Technology Used
 
-### frontend
+## Endpoints
+
+### Frontend
 
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)
@@ -42,4 +44,5 @@ You can also get my professional work on the platform bellow
 [Linkedin](https://www.linkedin.com/in/leonard-mukanda-5b6330239/)
 [github](https://github.com/mukandalee)
 [Twitter](https://twitter.com/mukanda_leonard)
+
 # shiyabo-community

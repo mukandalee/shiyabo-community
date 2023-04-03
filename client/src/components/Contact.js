@@ -31,6 +31,7 @@ function Contacts() {
 
   return (
     <div className="Contacts">
+      <div className="home">
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -61,6 +62,9 @@ function Contacts() {
 
         <button type="submit">Send Message</button>
       </form>
+
+      </div>
+     
     </div>
   );
 }

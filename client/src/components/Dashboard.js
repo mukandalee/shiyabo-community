@@ -6,7 +6,9 @@ import Contact from './Contact'
 import {Routes,Route,} from 'react-router-dom';
 import NavBar from './Navbar';
 import Events from './Events';
-import Member from './Member';
+import Group from './Group';
+import Groupjoin from './Groupjoin'
+import Members from './Members';
 function Dashboard() {
     
   return (
@@ -15,10 +17,14 @@ function Dashboard() {
     <NavBar />
     <Routes>
        <Route exact path = "/" element = {<Home/>} />
-       <Route exact path = "/Member" element = {<Member/>} />
+       <Route exact path = "/Member" element = {<Group/>} />
        <Route exact path = "Events" element = {<Events/>} />
        <Route exact path = "/About" element = {<About/>} />
        <Route exact path = "/Contact" element = {<Contact/>} />
+       <Route exact path = "/Group" element = {<Group/>} />
+       <Route exact path = "/Group-joining" element = {<Groupjoin/>} />
+       <Route exact path = "/Members" element = {<Members/>} />
+
     </Routes>
   </div>                 
     </div>

@@ -4,17 +4,19 @@ import "../index.css";
 
 function About() {
   return (
-    <div id="about" className="about-page">
-      <h1 className="about-heading">About Our Veterinary Service</h1>
+    <div className="home">
+       <div id="about" className="about-page">
+      <h1 className="about-heading">About Our community</h1>
       <div className="card mission-card">
         <img src="src/components/image/office.jpg" alt="Mission" />
         <div className="card-content">
           <h2>Our Mission</h2>
           <p>
-            Our mission is to provide the highest quality veterinary care to
-            pets and their owners in a compassionate and supportive environment.
-            We strive to offer personalized care that meets the individual needs
-            of each pet and their family.
+            Our mission ist to help one another in the achievement of our goals
+             as we focus on our community goal such as  enforcing unity amongest ourselves,
+             giving loans to Members to enable the do their businesses , pay school fees and 
+             also caring out of other economic activities to get their lives moving,
+             our goal also seeks to help needy cases to keep them going in their endevours through 
           </p>
         </div>
       </div>
@@ -24,10 +26,9 @@ function About() {
         <div className="card-content">
           <h2>Our Commitment to Openness</h2>
           <p>
-            We believe in transparency and honesty with our clients. We will
-            always provide clear and accurate information about your pet's
-            condition and treatment options, and answer any questions you may
-            have.
+            We believe in transparency and honesty with our Members. We will
+            always provide clear and accurate information in any of our activities, 
+            and answer any questions you may   have.
           </p>
         </div>
       </div>
@@ -37,11 +38,11 @@ function About() {
         <div className="card-content">
           <h2>Our Commitment to Professionalism</h2>
           <p>
-            Our team of veterinary professionals is dedicated to providing the
-            highest quality care to your pet. We are committed to staying
-            up-to-date with the latest advances in veterinary medicine, and
-            using the most advanced technology to provide the best possible
-            care.
+            Our team  also target on the creation of employment to
+             our members through community projects that we will
+            be caring out and also dedicated on helping the 
+            community members achieve their professional goals
+            
           </p>
         </div>
       </div>
@@ -51,14 +52,18 @@ function About() {
         <div className="card-content">
           <h2>Our Commitment to Care</h2>
           <p>
-            We understand how much your pet means to you, and we are committed
-            to providing the best possible care to keep them healthy and happy.
-            We treat each pet as if they were our own, and will always go above
+            We understand  what it means by lifting each other, 
+            moving together as the society  seeking to reduce the finacial gaps 
+            alongside building a united family, and will always go above
             and beyond to ensure their well-being.
+
           </p>
         </div>
       </div>
     </div>
+
+    </div>
+   
   );
 }
 

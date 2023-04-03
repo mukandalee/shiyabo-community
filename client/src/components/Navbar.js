@@ -19,10 +19,10 @@ export default function NavBar() {
             {/* <img src="https://media.istockphoto.com/id/1395347219/photo/modern-american-real-estate.jpg?b=1&s=170667a&w=0&k=20&c=KJADa6hwzLmJVozTmfxYFmMqQOQgLvHOwBVJloPeGt0="  alt="" /> */}
           </Menu.Item>
           <Menu.Item
-            name='Members'
-            active={activeItem === 'Members'}
+            name='Group'
+            active={activeItem === 'Group'}
             onClick={handleItemClick}
-            href="/members"
+            href="/Group"
           />
           <Menu.Item
             name='Events'

@@ -10,22 +10,27 @@ function ForgotenPassword({ setUser,props }) {
 
   return (
     <div className="authenticate" >
+      <div className="home">
       <form onSubmit={handleSubmit}>
 
-        <label htmlFor="username">Enter email to reset your password</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email to reset"
-          autoComplete="off"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <Nav.Link  href="/forgotenPassword">
-      <button type="submit">Submit</button>
-      </Nav.Link>
-        
-      </form>
+<label htmlFor="username">Enter email to reset your password</label>
+<input
+  type="email"
+  id="email"
+  placeholder="Enter your email to reset"
+  autoComplete="off"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+/>
+<Nav.Link  href="/forgotenPassword">
+<button type="submit">Submit</button>
+</Nav.Link>
+
+</form>
+
+      </div>
+
+     
      
     </div>
   );

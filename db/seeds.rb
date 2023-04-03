@@ -117,5 +117,22 @@ Category.create([
     { name: "Fundraising" },
     { name: "other ceremonies" }
   ])
+  Group.create([
+    { name: "Umoja " },
+    { name: "achievers" },
+    { name: "maendeleo" }
+  ])
+  Member.create([
+    {name: "leonard",
+     group: "Umoja",
+     role: "moderator"},
+     {name: "lee dae hoon",
+     group: "achievers",
+     role: "moderator"},
+     {name: "rashtov",
+     group: "maendeleo",
+     role: "moderator"},
+    ])
+
 
 puts "✅ Done seeding!"
