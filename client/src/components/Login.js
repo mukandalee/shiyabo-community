@@ -43,6 +43,7 @@ function Login({ setUser,props }) {
 
   return (
     <div className="" >
+      <div  className="home"> 
       <form onSubmit={handleLogin}>
         <h1>Login</h1>
 
@@ -85,6 +86,8 @@ function Login({ setUser,props }) {
       <div>
 //             go to <Link to='/Dashboard'>Dashboard</Link>
 //           </div>
+      </div>
+     
     </div>
   );
 }
