@@ -1,4 +1,4 @@
-import { color } from '@mui/system';
+// import { color } from '@mui/system';
 import { Nav } from 'react-bootstrap';
 import '../App.css';
 import Footer from './Footer';
@@ -9,12 +9,12 @@ function Home() {
     <div className="content" style={{  height: '30%', width: '40%',position: "absolute", marginTop: "5%", marginLeft: "2%", fontSize: "160px",color: "#fff", fontWeight: "600"}}>
          <h1 style={{ textAlign:'center',fontStyle: "italic", fontSize: "160px",fontWeight: "600"}}>Shiyabo Community</h1>
 
-         <Nav.Link style={{ textDecoration: "none",display: "inline-block", color: "#fff", fontSize: "24px", border: "2px solid #fff", padding: "14px 70px", borderRadius: "50px", marginTop: ""}} href="/events">"Together We Stand"</Nav.Link>
+         <Nav.Link style={{ textDecoration: "none",display: "inline-block", color: "#fff", fontSize: "24px", border: "2px solid #fff", padding: "14px 70px", borderRadius: "50px", marginTop: ""}} href="/Join">"Join a group"</Nav.Link>
     </div>
   
     <div>
         
-        <img className ="backVideo" style={{ width: '100%', height: '100%' }} src = "https://media.istockphoto.com/id/1248064953/photo/top-view-aerial-with-from-flying-drone-over-residential-district-development-buildings.jpg?b=1&s=170667a&w=0&k=20&c=4HCRvurLYSqM1niNb4lQYf9BO9xpeT02jEoZwhG1_F4="></img>
+        <img className ="backVideo" style={{ width: '100%', height: '100%' }} src = "https://media.istockphoto.com/id/1248064953/photo/top-view-aerial-with-from-flying-drone-over-residential-district-development-buildings.jpg?b=1&s=170667a&w=0&k=20&c=4HCRvurLYSqM1niNb4lQYf9BO9xpeT02jEoZwhG1_F4="  alt=''></img>
         
      
       

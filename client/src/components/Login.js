@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
-import {Link ,useNavigate  } from 'react-router-dom'
+import {useNavigate  } from 'react-router-dom'
 function Login({ setUser,props }) {
   const [adminName, setAdminName] = useState("");
   const [password, setPassword] = useState("");
@@ -83,9 +83,6 @@ function Login({ setUser,props }) {
       <Nav.Link  href="/forgotenPassword">
       <button className ="link-btn" > forgoten password? reset</button>
       </Nav.Link>
-      <div>
-//             go to <Link to='/Dashboard'>Dashboard</Link>
-//           </div>
       </div>
      
     </div>
@@ -93,5 +90,9 @@ function Login({ setUser,props }) {
 }
 
 export default Login;
+
+{/* <div>
+//             go to <Link to='/Dashboard'>Dashboard</Link>
+//           </div> */}
 
 

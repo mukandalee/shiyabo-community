@@ -17,7 +17,7 @@ function Dashboard() {
     <NavBar />
     <Routes>
        <Route exact path = "/" element = {<Home/>} />
-       <Route exact path = "/Member" element = {<Group/>} />
+       <Route exact path = "/Member" element = {<Members/>} />
        <Route exact path = "Events" element = {<Events/>} />
        <Route exact path = "/About" element = {<About/>} />
        <Route exact path = "/Contact" element = {<Contact/>} />

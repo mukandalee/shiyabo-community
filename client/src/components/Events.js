@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Card, Container, Row, Col,DropdownButton,Dropdown } from "react-bootstrap";
-import { Icon, Image, Button } from 'semantic-ui-react';
+import { Card, Container, Row, Col} from "react-bootstrap";
+import { Icon, Button } from 'semantic-ui-react';
 import { json, Link, useParams } from "react-router-dom";
 import FilterType from "./FilterType";
 import AddEvent from "./AddEvent";
@@ -55,8 +55,9 @@ function Events() {
   useEffect(() => {
     fetch("/events")
       .then((response) => response.json())
-      .then((events) => setEvents(events));
-      console.log(events);
+      .then(setEvents);
+      // .then((events) => setEvents(events))
+      // console.log(events);
   }, []);
 
   const handleDelete = (id) => {
@@ -84,7 +85,7 @@ function Events() {
                         .indexOf(searchResults.toLowerCase()) > -1
                 );
             });
-        } else if (filterParam == "All") {
+        } else if (filterParam === "All") {
             return searchParam.some((newEvent) => {
                 return (
                   event[newEvent]

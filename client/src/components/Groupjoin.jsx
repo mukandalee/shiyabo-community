@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-
+import {useNavigate  } from 'react-router-dom'
 function Joing(){
      const [name, setName] = useState("");
+     const navigate = useNavigate();
     const [group, setSelectedGroup] = useState("");
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
     
          const appointment = {
@@ -12,7 +13,7 @@ function Joing(){
            user_id: [],
          };
     
-        fetch("/members", {
+         const response = await fetch("/members", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -22,12 +23,17 @@ function Joing(){
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
+
+            if (response.ok) {
+              navigate("/Group");
+            }
             // Handle response from the API
           })
           .catch((error) => {
             console.error(error);
             // Handle error from the API
           });
+
         };
           const handleInputChange = (e) => {
         const input = e.target;
@@ -42,7 +48,8 @@ function Joing(){
      
     return (
     <div>
-        <form onSubmit={handleFormSubmit}>
+      <div className="home"> 
+      <form onSubmit={handleFormSubmit}>
             <label htmlFor="name"> Enter your name</label>
             <input 
             type="text" 
@@ -68,6 +75,9 @@ function Joing(){
         </select>
             <button type='submit'> join</button>
         </form>
+
+      </div>
+        
 
     </div>
     );

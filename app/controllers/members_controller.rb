@@ -14,6 +14,6 @@ class MembersController < ApplicationController
 
       private
       def member_params
-        Member.permit(:name, :group ,:role) 
+        Member.permit(:name, :group ) 
        end
 end
