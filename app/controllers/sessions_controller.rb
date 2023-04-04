@@ -30,6 +30,8 @@ class SessionsController < ApplicationController
       }
     end
 
+  end
+
   def destroy
       logout!
       render json: {
