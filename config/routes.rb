@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => 'admins#index'
   resources :groups
   resources :categories
   resources :users 

@@ -53,11 +53,13 @@ function Events() {
   }
   
   useEffect(() => {
-    fetch("/events")
+    fetch("/events",{
+      mode: 'no-cors'
+    })
+
       .then((response) => response.json())
-      .then(setEvents);
-      // .then((events) => setEvents(events))
-      // console.log(events);
+       .then((data) => setEvents(data))
+      //  console.log(events);
   }, []);
 
   const handleDelete = (id) => {
